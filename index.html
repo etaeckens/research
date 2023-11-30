@@ -1,0 +1,210 @@
+<html lang = "en">
+<head>
+
+<meta charset="utf-8">
+<title> Elijah Taeckens </title>
+
+</head>
+
+
+<body>
+
+  <div class="row" style="text-align: center">
+      <h1 id="mainname">Elijah Taeckens</h1>
+  </div>
+
+  <div class="row" style="text-align: center">
+      <p>
+        <a href="mailto:etaecken@terpmail.umd.edu"> Email</a>  &nbsp;/&nbsp;
+        <a href="https://scholar.google.com/citations?user=gZnnbucAAAAJ&hl=en">Google Scholar</a>  &nbsp;/&nbsp;
+        <a href="https://www.linkedin.com/in/elijah-taeckens-6770241b0/"> LinkedIn</a>  &nbsp;/&nbsp;
+        <a href="Elijah_Taeckens_CV.pdf"> CV </a>
+      </p>
+  </div>
+
+  <div class="row" style = "text-align: left; width: 100%; margin-bottom:5px">
+      <div style="width: 50%; margin-left: 10%; float:left">
+        <p> Hello! I am an undergraduate research assistant studying electrical engineering at the University of Maryland.
+          I currently work in the lab of <a href= "https://sites.google.com/umd.edu/shahlab/home?authuser=1">Dr. Sahil Shah </a>
+          researching brain machine interfaces and spiking neural networks.
+
+        </p>
+
+        <p> Broadly speaking, my research interests are in neural engineering and biologically inspired computational systems.
+          Specifically, I am interested in using tools from mathematics and signal processing to increase our understanding of the brain
+          and create new neurotechnologies that can improve quality of life for people with chronic neurological diseases.
+          I am particularly fascinated by the application of biologically inspired technologies to tasks in neural engineering.
+          My past research has focused on using spiking neural networks to improve long-term stability, power efficiency,
+          and adaptability in brain machine interfaces. Scroll down to learn more about my work!
+        </p>
+      </div>
+
+      <div style="margin-left: 65%">
+        <img src="Taeckens_Professional_Headshot.JPG" width = "250" height = "250">
+      </div>
+
+  </div>
+
+  <div class="row" style="display:flex; margin-left: 40%; text-align: center; width:100%; margin-bottom:30px">
+    <h2> Research Projects </h2>
+  </div>
+
+  <div style = "display:flex;width:100%; margin-bottom:50px">
+
+    <img src="SNN_Architecture.png" width = "325" height = "200" style="margin-left:7.5%;float:left;margin-top:50px">
+
+    <div style="margin-left:25px; width:50%; margin-right:10%">
+      <h3> Spike Timing Dependent Plasticity for Unsupervised Adaptive Brain Machine Interfaces </h3>
+      <p> <i> IEEE Brain Discovery and Neurotechnology Workshop, 2023 </i> </p>
+      <p> <a href="IEEE_Brain_STDP_Poster.pdf"> Poster </a> </p>
+
+      <p>
+        One of the major problems facing intracortical BCIs is that they tend to degrade in performance over long periods of time
+        due to changes in the position of the neural recording electrode and changes in the actual neurons themselves.
+        However, prior research has shown that lower dimensional neural manifolds can contain information about motor intent
+        that stays constant even as the dynamics of individual neural units change.
+        In this study, I aim to see if these low dimensional neural manifolds can be extracted by a spiking neural network
+        trained with spike timing dependent plasticity, a biologically inspired unsupervised learning rule that strengthens connections between
+        neurons with similar firing patterns. Early simulation results indicate STDP can enable recovery to neural disruptions;
+        we are currently evaluating the limitations of this method and how its performance compares to existing methods.
+      </p>
+
+    </div>
+  </div>
+
+  <div style = "display:flex;width:100%; margin-bottom:50px">
+
+    <!-- <img src="neural_disruption.png" width = "320" height = "250" style="margin-left:100px;float:left;margin-top:50px"> -->
+    <img src="sample_targets.png" width = "300" height = "250" style="margin-left:7.5%;float:left;margin-top:50px">
+
+
+    <div style="margin-left:50px; width:50%; margin-right:10%">
+      <h3> Continuous Learning SNN for Online Brain Machine Interface </h3>
+      <p> <i> Journal of Neural Engineering (Under Review) </i> </p>
+      <p> <a href = "https://www.biorxiv.org/content/10.1101/2023.08.16.553602v1.full"> Bioarxiv Paper </a> &nbsp;  &nbsp
+          <a href = "Continuous_Learning_SNN_JNE.pdf"> PDF </a>
+      </p>
+
+      <p>
+        Spiking neural networks have been shown to achieve high levels of accuracy during neural decoding tasks.
+        However, conventional methods of training SNNs for neural decoding use backpropagation, which can be quite computationally expensive,
+        in addition to being infeasible for learning in an online environment.
+        In this paper, we present a novel method for training SNN decoders continuously.
+        Unlike backpropagation learning, the proposed method uses a constant amount of memory regardless of the duration of training,
+        allowing for training on arbitrarily long inputs without stopping.
+        We also test its ability to respond to neural disruptions in a simulated online environment;
+        the continuous learning SNN outperforms state-of-the-art methods such as the ReFIT Kalman Filter and LSTM decoder,
+         after changes in the tuning of the neural inputs.
+        Additionally, it also demonstrates the ability to train in a closed loop environment without any prior offline training,
+        which could enable a more intuitive training procedure for BCI users.
+      </p>
+    </div>
+
+
+  </div>
+
+  <div style = "display:flex;text-align:left; margin-bottom:50px">
+
+
+    <img src="Brain_Illustration_Square.png" width = "260" height = "280" style="margin-left:10%;float:left; margin-top:50px">
+
+    <div style="margin-left:50px; width:50%; margin-right:10%">
+      <h3> Spiking Neural Networks for Kinematic Decoding </h3>
+      <p> <i> IEEE/EMBS Conference on Neural Engineering, 2023 </i> </p>
+      <p> <a href = "https://www.biorxiv.org/content/10.1101/2023.08.16.553602v1.full"> IEEE Paper </a> &nbsp;  &nbsp
+          <a href = "SNN_Kinematic_Decoding_NER.pdf"> PDF </a> &nbsp;  &nbsp
+          <a href= "NER2023_Poster.pdf"> Poster </a>
+      </p>
+
+      <p>
+        Nonlinear machine learning algorithms, such as neural networks and LSTMs,
+        have recently enabled neural decoders to reach higher levels of accuracy than
+        previously achieved by standard linear methods such as Kalman filters.
+        However, these machine learning algorithms are often quite computationally expensive, limiting their feasibility for on chip use.
+        In this work, we explored the use of spiking neural networks as a more efficient alternative to other machine learning methods.
+        Spiking neural networks mimic the properties of biological neurons by encoding information in the form of binary sequences of neural spikes,
+        and have been shown to be highly power efficient.
+        However, due to the binary nature of their outputs, SNNs are not particularly natural for regression tasks such as predicting arm kinematics.
+        I designed two modified readout functions to convert the spiking output of a SNN into a continuous, differentiable function that can model velocity.
+        We compared the performance of the SNN to that of a Kalman Filter and LSTM on multiple public neural decoding datasets, and demonstrated that it could achieve comparable accuracy.
+      </p>
+    </div>
+
+  </div>
+
+  <div style = "display:flex;text-align:left; margin-bottom:50px">
+
+
+    <img src="Lif_neuron_datapath.png" width = "220" height = "280" style="margin-left:10%;float:left">
+
+    <div style="margin-left:90px; width:50%; margin-right:10%">
+      <h3> Low Power FPGA Implementation of SNN Decoder </h3>
+      <p> <i> Undergraduate Honors Thesis in Electrical Engineering, 2023 </i> </p>
+      <p> <a href = "Taeckens_ECE_Honors_Thesis.pdf"> Thesis PDF </a>
+      </p>
+
+      <p>
+        One of the main reasons for interest in SNN neural decoders in the low power cost associated with SNNs.
+        My previous work with SNNs was done in Python on a standard laptop; to actually realize the power savings associated with SNNs,
+        the algorithm must be implemented in hardware. To do this, I designed an FPGA implementation of the SNN decoder using Verilog.
+        This implementation uses event-based asynchronous programming to minimize the number of operations that are dependent on a clock.
+        Due to the sparse nature of neural spike trains, these event based operations happen at a greatly reduced rate, with the potential
+        for large power savings. The datapath for one neural unit of the SNN is shown to the left.
+      </p>
+    </div>
+
+  </div>
+
+  <div style = "display:flex;text-align:left; margin-bottom:50px">
+
+
+    <img src="Music_Demo.png" width = "300" height = "220" style="margin-left:7%;float:left; margin-top:50px">
+
+    <div style="margin-left:50px; width:50%; margin-right:10%">
+      <h3> Decoding Music from EEG with Audio Feedback </h3>
+      <p> <i> Ongoing Project </i> </p>
+
+      <p>
+        Noninvasive neural decoding could of music could have significant implications for people with limited communication abilities, such as those with ALS,
+        due to the close relationship between neural representations of speech and music.
+        Neural decoding in other fields, such as motor decoding, has shown significant differences between
+        open loop decoding and closed loop decoding, in which the decoder output provides feedback to the user.
+        I proposed that real time audio feedback could be used as a "closed loop decoder" for music decoding from EEG recordings.
+        This research is still in its early stages, but preliminary results suggest that simple linear decoders can differentiate between "expected" and
+        "unexpected" audio feedback notes. We will be conducting a larger study in the spring of 2024.
+      </p>
+    </div>
+
+  </div>
+
+  <div style = "display:flex;text-align:left; margin-bottom:50px">
+
+
+    <img src="slow_bee_wing_cropped.gif" width = "310" height = "200" style="margin-left:5%;float:left; margin-top:100px">
+
+    <div style="margin-left:65px; width:50%; margin-right:10%">
+      <h3> Using Event-Based Vision to Track Bees in Flight </h3>
+      <p> <i> Ongoing Project </i> </p>
+      <p> <a href="http://teamhivemind.atwebpages.com/"> Website </a> &nbsp;  &nbsp
+          <a href="HiveMind_URD_Poster.pdf"> Poster </a>
+      </p>
+
+      <p>
+        This research project was conducted by myself and a group of other undergraduates as part of the UMD Gemstone Honors Research Program.
+      </p>
+      <p>
+        An important indicator of the health of honeybee colonies is sudden changes in population levels.
+        Unfortunately, current methods of population tracking, such as weighing the hives, are imprecise and disruptive.
+        We proposed that it would be possible to track honeybees entering and exiting a hive in real-time using a neuromorphic event-based vision sensor.
+        This vision sensor responds to changes in light levels, rather than absolute values, which makes it ideal for tracking fast moving objects like bees,
+        since the sensor automatically isolates the bees from the background.
+        We developed event based algorithms to identify and track bees in flight, and have sucessfully tracked bees entering and leaving over the course of a day.
+        Recently, we have also been exploring the use of event-based vision to track wingbeat frequency in real time.
+        The wings generate a highly periodic sequence of events in the vision sensor that can be used to determine the frequency.
+        This could be used to identify invaders, such as wasps, which would have a very different frequency than a standard honeybee.
+      </p>
+    </div>
+
+  </div>
+
+</body>
